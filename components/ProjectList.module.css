@@ -1,0 +1,49 @@
+.Container {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+.Card {
+    box-sizing: border-box;
+    height: 300px;
+    width: 200px;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.5s;
+    will-change: transform;
+    background-color: #1d3557;
+    transition: all 0.5s;
+    border: 10px solid white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    margin-top: 3rem;
+}
+
+.Card:hover {
+    transform: perspective(400px) translateZ(50px);
+    box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+}
+
+.ProjectName {
+    font-weight: 300;
+    font-size: 1.5rem;
+    width: 80%;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.ProjectDescription {
+    width: 80%;
+    margin: 0;
+    font-weight: 300;
+    line-height: 1.5rem;
+}

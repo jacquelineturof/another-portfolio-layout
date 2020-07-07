@@ -1,0 +1,71 @@
+.Container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: url('/background1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.Overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #1d3557;
+    opacity: .9;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+
+.Name {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.Title {
+    margin-top: .5rem;
+    font-size: 1.5rem;
+}
+
+.HighLight {
+    color: #FF6542;
+}
+
+.Particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.Icon {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .Name {
+        width: 80%;
+        text-align: center;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .Name {
+        font-size: 2.5rem;
+    }
+  }

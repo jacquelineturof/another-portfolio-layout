@@ -1,0 +1,31 @@
+.Container {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #eee;
+    background-color: #1d3557;
+}
+
+.Form {
+    height: 70%;
+    width: 50%;
+    border-radius: .6rem;
+    
+    box-shadow: 0 5px 15px -5px #00000070;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Lato', sans-serif;
+    z-index: 100;
+    background-color: white;
+}
+
+@media only screen and (max-width: 900px) {
+    .Form {
+        width: 80%;
+    }
+}

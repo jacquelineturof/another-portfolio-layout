@@ -1,0 +1,68 @@
+.Container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.SkillsContainer {
+    width: 100%;
+    height: 90%;
+    display: flex;
+}
+
+.Category {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Label {
+    width: 25%;
+    background-color: #1D3557;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .9rem;
+}
+
+.Heading {
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.ProgressContainer {
+    height: 100%;
+    width: 60%;
+}
+
+.Progress {
+    background-color: #6690CC;
+    height: 100%;
+}
+
+.Percent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 800px) {
+    .Label {
+        font-size: .75rem;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .Label {
+        font-size: .5rem;
+        font-weight: 700;
+    }
+  }

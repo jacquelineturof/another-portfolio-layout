@@ -1,0 +1,28 @@
+.Btn {
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.Submit {
+    background-color: #1d3557;
+    font-family: 'Lato', sans-serif;
+    width: 70%;
+    height: 40px;
+    color: #F2F4F3;
+}
+
+.Skills {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 30%;
+    width: 30%;
+    background-color: #1d3557;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    border-radius: 50%;
+    font-size: 3rem;
+}
+

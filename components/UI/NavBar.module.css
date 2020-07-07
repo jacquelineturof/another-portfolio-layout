@@ -1,0 +1,94 @@
+.NavBar {
+    position: sticky;
+    top: 0;
+    height: 10vh;
+    width: 100%;
+    background-color: #1d3557;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Lato', sans-serif;
+    z-index: 1;
+}
+
+.NameContainer {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.Name {
+    font-weight: 300;
+}
+
+.LinksContainer {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: .8rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px -5px #00000070;
+}
+
+.Label {
+    display: none;
+    font-size: .5rem;
+}
+
+.Icon {
+    font-size: 1.2rem;
+}
+
+.Link:hover .Label {
+    display: block;
+}
+
+.Link:hover .Icon {
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+    .NameContainer {
+        width: 30%;
+    }
+
+    .Name {
+        text-align: center;
+    }
+
+    .LinksContainer {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .Link {
+        width: 40px;
+        height: 40px;
+    }
+
+    .Icon {
+        font-size: 1rem;
+    }
+
+    .Name {
+        font-size: 1rem;
+    }
+}
+

@@ -1,0 +1,43 @@
+.Notification {
+    position: absolute;
+    left: 20%;
+    top: 0%;
+    background-color: white;
+    height: 100px;
+    width: 300px;
+    border-radius: .6rem;
+    opacity: 0;
+    animation: fadeUp 1s forwards;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Lato', sans-serif;
+}
+
+.InnerBar,
+.Bar {
+    border-radius: .6rem;
+    height: 10px;
+}
+
+.Bar {
+    width: 90%;
+    background-color: #ddd;
+}
+
+.InnerBar {
+    background-color: #904E55;
+    transition: all .6s;
+}
+
+@keyframes fadeUp {
+    from {
+        transform: translate3d(0,-40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}

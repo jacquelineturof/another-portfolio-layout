@@ -1,0 +1,56 @@
+.Container {
+    width: 60px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70%;
+    left: 0;
+    transform: translateY(-50%);
+    box-shadow: 0 5px 15px -5px #00000070;
+    z-index: 1;
+}
+
+.Tile {
+    height: 34%;
+    width: 100%;
+    cursor: pointer;
+    transition: width .3s;
+    position: relative;
+}
+
+.LinkedInBlue {
+    background-color: #0077B5;
+}
+
+.Black {
+    background-color: black;
+}
+
+.GoogleRed {
+    background-color: #DE5246;
+}
+
+.Icon {
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    transform: translate(-50%, 50%);
+    transition: all .3s;
+}
+
+.Tile:hover {
+    width: 70px;
+}
+
+.Tile:hover .Icon {
+    left: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    .Container {
+        top: 75%;
+    }
+}
