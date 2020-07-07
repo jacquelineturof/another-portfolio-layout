@@ -9,7 +9,7 @@ const NavLink = ({ href, icon, label }) => (
     <Link href = { href }>
         <a className = { classes.Link }>
             <FontAwesomeIcon
-                icon = { [ 'fal', icon ] } 
+                icon = { [ 'fas', icon ] } 
                 className = { classes.Icon } />
             <p className = { classes.Label }>{ label }</p>
         </a>

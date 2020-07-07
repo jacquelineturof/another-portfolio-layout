@@ -4,8 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import classes from './SocialMedia.module.css'
 
-const SocialMedia = () => (
-    <div className = { classes.Container }>
+const SocialMedia = ({ isCenter }) => (
+    <div className = { isCenter ? classes.Center : classes.Container }>
         <a 
             className = { [ classes.Tile, classes.LinkedInBlue ].join(' ') }
             href = "https://www.linkedin.com/in/jacqueline-turof-339089143"
@@ -26,7 +26,7 @@ const SocialMedia = () => (
             className = { [ classes.Tile, classes.GoogleRed ].join(' ')} 
             href = "mailto: jacquelineturof@gmail.com">
             <FontAwesomeIcon
-                icon = { [ 'fal', 'envelope-open-text' ] } 
+                icon = { [ 'fas', 'envelope-open-text' ] } 
                 className = { classes.Icon } />
         </a>
     </div>

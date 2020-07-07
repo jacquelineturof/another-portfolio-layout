@@ -1,18 +1,18 @@
 import { library } from '@fortawesome/fontawesome-svg-core'
 
 import { 
-    faChevronDoubleDown, 
+    faChevronDown, 
     faEnvelopeOpenText, 
     faTerminal, 
     faHome, 
     faSignature, 
     faAt
-} from '@fortawesome/pro-light-svg-icons'
+} from '@fortawesome/free-solid-svg-icons'
 
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 library.add(
-    faChevronDoubleDown, 
+    faChevronDown, 
     faGithub, 
     faLinkedin, 
     faEnvelopeOpenText, 

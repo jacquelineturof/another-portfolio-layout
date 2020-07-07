@@ -40,7 +40,7 @@ const Header = () => (
             <h4 className = { classes.Title }>Full Stack Developer</h4>
             <MyParticles />
             <FontAwesomeIcon
-                icon = { [ 'fal', 'chevron-double-down' ] } 
+                icon = { [ 'fas', 'chevron-down' ] } 
                 className = { classes.Icon } />
         </div>
     </header>

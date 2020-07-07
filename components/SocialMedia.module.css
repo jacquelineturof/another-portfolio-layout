@@ -1,14 +1,19 @@
-.Container {
+.Container,
+.Center {
     width: 60px;
     height: 180px;
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 70%;
+    top: 90%;
     left: 0;
     transform: translateY(-50%);
     box-shadow: 0 5px 15px -5px #00000070;
     z-index: 1;
+}
+
+.Center {
+    top: 50%;
 }
 
 .Tile {

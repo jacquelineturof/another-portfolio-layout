@@ -154,7 +154,7 @@ const ContactForm = () => {
                     )
                     : null
             }
-            <SocialMedia />
+            <SocialMedia isCenter = { true } />
             <form className = { classes.Form } onSubmit = { submitHandler }>
                 <h1>Send Me a Message!</h1>
                 <Input { ...NAME_CONFIG } />
