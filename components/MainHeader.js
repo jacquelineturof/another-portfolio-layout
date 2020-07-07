@@ -1,5 +1,5 @@
 import React from 'react'
-// import Particles from 'react-particles-js'
+import Particles from 'react-particles-js'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -38,7 +38,7 @@ const Header = () => (
         <div className = { classes.Overlay }>
             <h1 className = { classes.Name }>Jacqueline <span className = { classes.HighLight }>Turof</span></h1>
             <h4 className = { classes.Title }>Full Stack Developer</h4>
-            {/* <MyParticles /> */}
+            <MyParticles />
             <FontAwesomeIcon
                 icon = { [ 'fas', 'chevron-down' ] } 
                 className = { classes.Icon } />
