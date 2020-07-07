@@ -1,8 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Transition, animated } from 'react-spring/renderprops.cjs'
 
 import Header from './Header'
-import Button from './UI/Button'
 
 import classes from './Skills.module.css'
 
@@ -52,8 +51,6 @@ const Skills = () => {
         <Skill key = "f3" name = "SSR - Next" percent = "70%" />,
         <Skill key = "f4" name = "Angular" percent = "60%" />,
     ]
-        // to trigger animation only when component is in viewport
-        const [ show, setShow ] = useState(false)
 
         const backendSkillsTransition = (
             <Transition
@@ -86,8 +83,7 @@ const Skills = () => {
                 )}
             </Transition>
         )
-
-    const content = (
+    return (
         <>
             <Header title = "Skills" />
             <div className = { classes.SkillsContainer }>
@@ -102,23 +98,9 @@ const Skills = () => {
                             Frontend
                         </h5>
                         { frontEndSkillsTransition }
-                     </div>
+                    </div>
             </div>
         </>
-    )
-
-    const button = (
-        <Button
-            type = "Skills" 
-            clicked = { () => setShow(true) }>
-            View Skills
-        </Button>
-    )
-
-    return (
-        <div className = { classes.Container }>
-            { show ? content : button }
-        </div>
     )
 }
 
