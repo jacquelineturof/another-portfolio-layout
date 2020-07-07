@@ -35,21 +35,13 @@
     font-weight: 400;
 }
 
-.Image {
-    height: 50%;
-    width: 70%;
-    position: absolute;
-    bottom: 8%;
-    right: 5%;
+@media only screen and (max-width: 1000px) {
+    .Container {
+        height: 70vh;
+    }
 }
 
 @media only screen and (max-width: 900px) {
-    .Image {
-        width: 60%;
-        height: 40%;
-        bottom: 3%;
-    }
-
     .Bio {
         line-height: 1.2rem;
     }
@@ -62,5 +54,9 @@
 
     .Heading {
         font-size: 1.5rem;
+    }
+
+    .Container {
+        height: 80vh;
     }
 }

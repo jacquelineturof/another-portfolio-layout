@@ -18,7 +18,6 @@ const AboutMe = () => (
             we can do!
         </p>
         <SocialMedia />
-        {/* <img src = "/coder.png" alt = "coder" className = { classes.Image } /> */}
     </div>
 )
 

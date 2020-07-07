@@ -28,38 +28,12 @@ const Footer = ({ path }) => {
         </div>
     )
 
-    const profile = (
-        <div className = { classes.Profile }>
-            <Link href="/profile">
-                <a className = { [ classes.Link, classes.ProfileLink ].join(' ') }>
-                    View My Profile
-                </a>
-            </Link>
-        </div>
-    )
 
-    let links
-
-    if (path === 'profile') {
-        links = [
-            projects,
-            contact
-        ]
-    } else if (path === 'projects') {
-        links = [
-            profile,
-            contact
-        ]
-    } else {
-        links = [
-            profile,
-            projects
-        ]
-    }
 
     return (
         <div className = { classes.Container }> 
-            { links.map(link => link) }
+            { projects }
+            { contact }
         </div>
     )
 }
