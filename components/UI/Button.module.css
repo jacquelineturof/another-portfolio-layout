@@ -24,5 +24,16 @@
     color: white;
     border-radius: 50%;
     font-size: 3rem;
+    transition: background-color .4s;
+}
+
+.Skills:hover {
+    background-color: #FF6542;
+}
+
+@media only screen and (max-width: 900px) {
+    .Skills {
+        width: 80%;
+    }
 }
 
