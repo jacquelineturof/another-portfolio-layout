@@ -1,5 +1,5 @@
 .Container {
-    height: 60vh;
+    height: 50vh;
     width: 100%;
     position: relative;
 }
@@ -22,13 +22,36 @@
     font-weight: 300;
 }
 
+.BioContainer {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ImageContainer {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+
+.Image {
+    height: 90%;
+    width: 90%;
+    border-radius: 50%;
+}
+
 .Bio {
     margin-left: 2rem;
-    width: 80%;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     line-height: 1.5rem;
     font-size: 1.2rem;
+    width: 50%;
+    text-align: center;
 }
 
 .Bold {

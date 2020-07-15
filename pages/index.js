@@ -5,7 +5,6 @@ import dynamic from 'next/dynamic'
 
 import Header from '../components/MainHeader'
 import AboutMe from '../components/AboutMe'
-
 import Footer from '../components/UI/Footer'
 
 import Button from '../components/UI/Button'
@@ -14,7 +13,8 @@ const styles = {
     container: {
         width: '100vw',
         display: 'flex',
-        flexDirection: 'column'
+        flexDirection: 'column',
+        position: 'relative'
     },
     skillsContainer: {
         height: '100vh',

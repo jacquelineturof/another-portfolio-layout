@@ -2,6 +2,7 @@ import React from 'react'
 import { Transition, animated } from 'react-spring/renderprops.cjs'
 
 import Header from './Header'
+import SocialMedia from '../components/SocialMedia'
 
 import classes from './Skills.module.css'
 
@@ -85,7 +86,7 @@ const Skills = () => {
         )
     return (
         <>
-            <Header title = "Skills" />
+            {/* <Header title = "Skills" /> */}
             <div className = { classes.SkillsContainer }>
                 <div className = { classes.Category}>
                     <h5 className = { classes.Heading }>
@@ -100,6 +101,7 @@ const Skills = () => {
                         { frontEndSkillsTransition }
                     </div>
             </div>
+            <SocialMedia />
         </>
     )
 }
